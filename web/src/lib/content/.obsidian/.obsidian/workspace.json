@@ -1,72 +1,41 @@
 {
   "main": {
-    "id": "d2e57b203fabd791",
+    "id": "3d91917b8e4ca800",
     "type": "split",
     "children": [
       {
-        "id": "bede7cd0fb75a7df",
+        "id": "4fe62199bc22a2b5",
         "type": "tabs",
         "children": [
           {
-            "id": "c588c8d12c5f7702",
+            "id": "860e192edb89bba4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Using-Markdown-in-Svelte.md",
+                "file": "2024-12-05.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Using-Markdown-in-Svelte"
-            }
-          },
-          {
-            "id": "fae67ce8fa4b63da",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Jay says.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Jay says"
-            }
-          },
-          {
-            "id": "130eaad026611fb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Jay says.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Jay says"
+              "title": "2024-12-05"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a69ef8c1dea71399",
+    "id": "c016d433947ec95c",
     "type": "split",
     "children": [
       {
-        "id": "99030135b6260693",
+        "id": "1f2c1637a254833b",
         "type": "tabs",
         "children": [
           {
-            "id": "bbeb4ea8d01ce855",
+            "id": "0b6148e0aedcb2e3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -78,7 +47,7 @@
             }
           },
           {
-            "id": "afc5509c38fa5543",
+            "id": "033e860256c384aa",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -95,7 +64,7 @@
             }
           },
           {
-            "id": "53c950f1571616a8",
+            "id": "7d6dfe4acb544fe7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -111,20 +80,20 @@
     "width": 300
   },
   "right": {
-    "id": "74142d853a5fb911",
+    "id": "959a0c7a33f735ac",
     "type": "split",
     "children": [
       {
-        "id": "065cd0d2b52977db",
+        "id": "e0324b804901ac3d",
         "type": "tabs",
         "children": [
           {
-            "id": "398f4b2bc7fb48c1",
+            "id": "3c97fee6fb88970a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/welcome.md",
+                "file": "2024-12-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,25 +103,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for welcome"
+              "title": "Backlinks for 2024-12-05"
             }
           },
           {
-            "id": "655e694ad24637c7",
+            "id": "b47a7fa8bcca5b78",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/welcome.md",
+                "file": "2024-12-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from welcome"
+              "title": "Outgoing links from 2024-12-05"
             }
           },
           {
-            "id": "eba769dfb90abcb3",
+            "id": "ca186ef28b7f75dd",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -165,15 +134,15 @@
             }
           },
           {
-            "id": "2bcc1385d707df56",
+            "id": "7c77481148d49f7e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/welcome.md"
+                "file": "2024-12-05.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of welcome"
+              "title": "Outline of 2024-12-05"
             }
           }
         ]
@@ -193,16 +162,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "130eaad026611fb1",
+  "active": "860e192edb89bba4",
   "lastOpenFiles": [
-    "example.svx",
-    "posts/example.svx",
-    "posts/extract_wisdom.md",
-    "templates/{{title}}.md",
-    "posts/Jay says.md",
-    "posts/getting-started.md",
-    "posts/welcome.md",
-    "posts/Using-Markdown-in-Svelte.md",
-    "posts/SkeletonUI.md"
+    "2024-12-05.md"
   ]
 }
