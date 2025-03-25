@@ -1,5 +1,4 @@
-  import { createPipeline, transformers } from 'pdf-to-markdown-core/lib/src';
-import { PARSE_SCHEMA } from 'pdf-to-markdown-core/lib/src/PdfParser';
+import pdf2md from '@opendocsg/pdf2md';
 import * as pdfjs from 'pdfjs-dist';
 
 export class PdfConversionService {
@@ -25,50 +24,32 @@ export class PdfConversionService {
     const buffer = await file.arrayBuffer();
     console.log('Buffer created:', buffer.byteLength);
 
-    const pipeline = createPipeline(pdfjs, {
-      transformConfig: { 
-        transformers 
-      }
-    });
-    console.log('Pipeline created');
-
-    const result = await pipeline.parse(
-      buffer,
-      (progress) => console.log('Processing:', {
-        stage: progress.stages,
-        details: progress.stageDetails,
-        progress: progress.stageProgress
-      })
-    );
-    console.log('Parse complete, validating result');
-
-    const transformed = result.transform();
-    console.log('Transform applied:', transformed);
-
-    const markdown = transformed.convert({
-        convert: (items) => {
-          console.log('PDF Structure:', {
-            itemCount: items.length,
-            firstItem: items[0],
-            schema: PARSE_SCHEMA  // ['transform', 'width', 'height', 'str', 'fontName', 'dir']
+    try {
+      // Using the @opendocsg/pdf2md library instead
+      const markdown = await pdf2md(buffer, {
+        pageParsed: (pages) => {
+          console.log('Page parsed:', {
+            pageCount: pages.length
           });
-      
-          const text = items
-            .map(item => item.value('str'))  // Using 'str' instead of 'text' based on PARSE_SCHEMA
-            .filter(Boolean)
-            .join('\n');
-      
-          console.log('Converted text:', {
-            length: text.length,
-            preview: text.substring(0, 100)
+        },
+        documentParsed: (document, pages) => {
+          console.log('Document parsed:', {
+            numPages: document.numPages,
+            totalItems: pages.reduce((acc, page) => acc + page.items.length, 0)
           });
-      
-          return text;
         }
       });
       
+      console.log('Conversion complete:', {
+        length: markdown.length,
+        preview: markdown.substring(0, 100)
+      });
 
-    return markdown;
+      return markdown;
+    } catch (error) {
+      console.error('Error converting PDF to markdown:', error);
+      throw error;
+    }
   }
 }
 
