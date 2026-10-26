@@ -83,6 +83,11 @@ func TestCreateClient(t *testing.T) {
 			exists:   true,
 		},
 		{
+			name:     "Existing provider - CloudGPU",
+			provider: "CloudGPU",
+			exists:   true,
+		},
+		{
 			name:     "Existing provider - OpenCode Zen",
 			provider: "OpenCode Zen",
 			exists:   true,
