@@ -283,6 +283,11 @@ var ProviderMap = map[string]ProviderConfig{
 		BaseURL:             "https://api.cheaperinference.com/v1",
 		ImplementsResponses: false,
 	},
+	"CloudGPU": {
+		Name:                "CloudGPU",
+		BaseURL:             "https://cloudgpu.app/v1",
+		ImplementsResponses: false,
+	},
 	"DeepSeek": {
 		Name:                "DeepSeek",
 		BaseURL:             "https://api.deepseek.com",
