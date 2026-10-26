@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.556 (2026-10-26)
+
+### PR [#2312](https://github.com/danielmiessler/Fabric/pull/2312) by [mrhy7176](https://github.com/mrhy7176): feat: add CloudGPU as an OpenAI-compatible provider
+
+- Feat: add CloudGPU as an OpenAI-compatible provider
+
 ## v1.4.555 (2026-10-25)
 
 ### PR [#2309](https://github.com/danielmiessler/Fabric/pull/2309) by [heydryft](https://github.com/heydryft): feat: add Runcrate as an OpenAI-compatible provider

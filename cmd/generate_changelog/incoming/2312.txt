@@ -1,3 +1,0 @@
-### PR [#2312](https://github.com/danielmiessler/Fabric/pull/2312) by [mrhy7176](https://github.com/mrhy7176): feat: add CloudGPU as an OpenAI-compatible provider
-
-- Feat: add CloudGPU as an OpenAI-compatible provider
