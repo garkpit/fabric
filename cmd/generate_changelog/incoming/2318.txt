@@ -1,3 +1,0 @@
-### PR [#2318](https://github.com/danielmiessler/Fabric/pull/2318) by [Adam-Dalloul](https://github.com/Adam-Dalloul): feat: add EmpirioLabs AI as an OpenAI-compatible provider
-
-- Feat: add EmpirioLabs AI as an OpenAI-compatible provider
